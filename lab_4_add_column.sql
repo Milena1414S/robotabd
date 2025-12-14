@@ -1,0 +1,3 @@
+ALTER TABLE `Products`
+ADD COLUMN `updated_at` TIMESTAMP NULL DEFAULT NULL
+AFTER `category_id`;

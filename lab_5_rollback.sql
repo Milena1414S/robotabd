@@ -1,0 +1,13 @@
+SELECT * FROM `Products` WHERE `id` = 6;
+
+START TRANSACTION;
+
+UPDATE `Products`
+SET `price` = 999.00
+WHERE `id` = 6;
+
+SELECT * FROM `Products` WHERE `id` = 6;
+
+ROLLBACK;
+
+SELECT * FROM `Products` WHERE `id` = 6;
